@@ -1,5 +1,6 @@
-#! /usr/bash
+#! /bin/bash
 
+. utils.sh
 
 # Check for important commands
 echo "[*] Checking for command availability ..."

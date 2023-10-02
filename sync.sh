@@ -2,6 +2,8 @@
 
 . utils.sh
 
+BACKUP_LOCATION=$(pwd)
+
 # Check for important commands
 echo "[*] Checking for command availability ..."
 ## Check to see is git command line installed in this machine
@@ -17,9 +19,11 @@ fi
 echo "[*] Fetching from remote ..."
 git fetch
 
+cd ~
 # Syncing dotfiles
-## NVIM 
-bisync "nvim" dotfiles/nvim/
+## NVIM y
+bisync "nvim" $BACKUP_LOCATION"/dotfiles/nvim/"
 
 # Backup local changes
+cd $BACKUP_LOCATION
 gitlocalcheck

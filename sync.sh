@@ -21,8 +21,5 @@ git fetch
 ## NVIM 
 bisync "nvim" dotfiles/nvim/
 
-## ZSH
-bisync "zsh" dotfiles/zsh/
-
 # Backup local changes
 gitlocalcheck

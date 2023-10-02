@@ -13,9 +13,9 @@ function gitlocalcheck {
 
 # Push to Github
 function gitpush {
-	git add -u;
+	git add .
 	git commit -m "New backup `date +'%Y-%m-%d %H:%M:%S'`";
-	git push origin master
+	git push 
 }
 
 # Sync folders back and forth

@@ -22,7 +22,7 @@ git fetch
 cd ~
 # Syncing dotfiles
 ## NVIM y
-bisync "nvim" $BACKUP_LOCATION"/dotfiles/nvim/"
+bisync "nvim" "/dotfiles/nvim/" $BACKUP_LOCATION
 
 # Backup local changes
 cd $BACKUP_LOCATION

@@ -18,6 +18,7 @@ fi
 # Fetches remote
 echo "[*] Fetching from remote ..."
 git fetch
+git pull
 
 cd ~
 # Syncing dotfiles

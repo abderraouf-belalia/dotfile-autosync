@@ -9,6 +9,7 @@ function gitpush {
 }
 
 function gitpull {
+  clipsecret github
   git pull
 }
 
@@ -25,8 +26,20 @@ function autosyncdotfiles {
     && cd -
 }
 
+# MISC FUNCTIONS
+function clipsecret {
+  declare -g SECRETS_PATH=~/.secrets
+
+  # Checks if xclip is installed.
+  (xclip -version |& grep 'version' >/dev/null) || (echo "[!] Install xclip utlity." && exit 1)
+  
+  cat $SECRETS_PATH | grep "$1" | awk 'BEGIN{FS=":"}{print $2}' | xclip -selection clipboard
+}
+
 export gitpush 
 export gitpull 
 export gitfetch
 
 export autosyncdotfiles
+
+export clipsecret

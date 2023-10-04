@@ -15,6 +15,7 @@ function gitlocalcheck {
 function gitpush {
 	git add .
 	git commit -m "New backup `date +'%Y-%m-%d %H:%M:%S'`";
+  clipsecret github 2>/dev/null || echo "[-] Secret clipping failed."
 	git push 
 }
 

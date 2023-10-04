@@ -18,7 +18,7 @@ alias optconfig="nvim $ZSH_CONFIG/options.zsh"
 NVIM_CONFIG=~/.config/nvim
 PLUGIN_CONFIG=$NVIM_CONFIG/lua/core/plugin_config
 
-alias nvim=~/.squashfs-root/usr/bin/nvim
+nvim -v &>/dev/null || alias nvim=~/.squashfs-root/usr/bin/nvim
 
 alias nvimconfig="nvim $NVIM_CONFIG/init.lua"
 alias nvimplugconfig="nvim $PLUGIN_CONFIG/init.lua"

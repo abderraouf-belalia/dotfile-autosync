@@ -11,3 +11,4 @@
 
 # Compilation flags export ARCHFLAGS="-arch x86_64"
 
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet

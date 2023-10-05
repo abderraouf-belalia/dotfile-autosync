@@ -1,0 +1,5 @@
+# Put custom cheatsheets here.
+# Follow the format,
+#   description | key/command
+# You can group cheats using,
+#  ## section-name @tag1 @tag2

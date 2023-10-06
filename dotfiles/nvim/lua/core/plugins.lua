@@ -19,6 +19,10 @@ return require('packer').startup(function(use)
   -- system
   use 'ellisonleao/gruvbox.nvim'
   use 'nvim-tree/nvim-tree.lua'
+  use {
+      'stevearc/oil.nvim',
+      config = function() require('oil').setup() end
+    }
     -- appearance
     use 'nvim-tree/nvim-web-devicons'
 

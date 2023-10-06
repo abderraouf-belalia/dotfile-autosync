@@ -69,7 +69,28 @@ return require('packer').startup(function(use)
           }
         }
     -- ai
-    use 'aduros/ai.vim'
+    use ({
+        "Bryley/neoai.nvim",
+        require = { "MunifTanjim/nui.nvim" },
+        cmd = {
+            "NeoAI",
+            "NeoAIOpen",
+            "NeoAIClose",
+            "NeoAIToggle",
+            "NeoAIContext",
+            "NeoAIContextOpen",
+            "NeoAIContextClose",
+            "NeoAIInject",
+            "NeoAIInjectCode",
+            "NeoAIInjectContext",
+            "NeoAIInjectContextCode",
+        },
+        config = function()
+            require("neoai").setup({
+                -- Options go here
+            })
+        end,
+    })
     -- API Client
     use {
       "rest-nvim/rest.nvim",

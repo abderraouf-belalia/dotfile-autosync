@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
 
-  -- filesystem
+  -- system
   use 'ellisonleao/gruvbox.nvim'
   use 'nvim-tree/nvim-tree.lua'
     -- appearance
@@ -28,6 +28,10 @@ return require('packer').startup(function(use)
   	  tag = '0.1.0',
   	  requires = { {'nvim-lua/plenary.nvim'} }
     })
+    -- shell
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+    end}
 
   -- editor
   use({
@@ -40,6 +44,10 @@ return require('packer').startup(function(use)
         end
     })
   use 'nvim-treesitter/nvim-treesitter'
+
+  use('neovim/nvim-lspconfig')
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
     -- appearance
     use 'overcache/NeoSolarized'
     use 'nvim-lualine/lualine.nvim'

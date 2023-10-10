@@ -52,6 +52,27 @@ return require('packer').startup(function(use)
   use('neovim/nvim-lspconfig')
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
+  -- note-taking
+  use {
+      "nvim-neorg/neorg",
+      config = function()
+          require('neorg').setup {
+              load = {
+                  ["core.defaults"] = {}, -- Loads default behaviour
+                  ["core.concealer"] = {}, -- Adds pretty icons to your documents
+                  ["core.dirman"] = { -- Manages Neorg workspaces
+                      config = {
+                          workspaces = {
+                              notes = "~/notes",
+                          },
+                      },
+                  },
+              },
+          }
+      end,
+      run = ":Neorg sync-parsers",
+      requires = "nvim-lua/plenary.nvim",
+  }
     -- appearance
     use 'overcache/NeoSolarized'
     use 'nvim-lualine/lualine.nvim'

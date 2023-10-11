@@ -28,7 +28,7 @@ function autosyncdotfiles {
 
 # MISC FUNCTIONS
 function clipsecret {
-  if [[-z "${TERMUX_VERSION}"]]; 
+  if [-z ${TERMUX_VERSION+x}]; 
   then; 
     exit
   fi

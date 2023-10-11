@@ -30,7 +30,7 @@ function autosyncdotfiles {
 function clipsecret {
   if [ -z ${TERMUX_VERSION+x} ]; 
   then 
-    exit
+    return;
   fi
   declare -g SECRETS_PATH=~/.secrets
 

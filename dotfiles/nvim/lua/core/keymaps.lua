@@ -7,6 +7,9 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 vim.keymap.set('n', '<leader>s', ':split<CR>')
 vim.keymap.set('n', '<leader>vs', ':vsplit<CR>')
 
+-- Packer
+vim.api.nvim_set_keymap('n', '<leader>ps', '<cmd>PackerSync<CR>', {noremap = true})
+
 -- Commands
 vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
 

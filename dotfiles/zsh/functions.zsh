@@ -19,7 +19,7 @@ function gitfetch {
 
 # CONFIG FUNCTIONS
 function autosyncdotfiles {
-  if IS_TERMUX then return;
+  if [[ IS_TERMUX ] ]]] then return;
   declare -g AUTOSYNC_DOTFILES_PATH=~/dotfile-autosync
   [ -d $AUTOSYNC_DOTFILES_PATH ] \
     && cd $AUTOSYNC_DOTFILES_PATH \

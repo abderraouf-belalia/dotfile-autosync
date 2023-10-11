@@ -19,6 +19,7 @@ function gitfetch {
 
 # CONFIG FUNCTIONS
 function autosyncdotfiles {
+  if IS_TERMUX then return;
   declare -g AUTOSYNC_DOTFILES_PATH=~/dotfile-autosync
   [ -d $AUTOSYNC_DOTFILES_PATH ] \
     && cd $AUTOSYNC_DOTFILES_PATH \
@@ -34,6 +35,14 @@ function clipsecret {
   (xclip -version |& grep 'version' >/dev/null) || (echo "[!] Install xclip utlity." && exit 1)
   
   cat $SECRETS_PATH | grep "$1" | awk 'BEGIN{FS=":"}{print $2}' | xclip -selection clipboard
+}
+
+# CHECKERS
+function IS_TERMUX {
+  if [ -z "${TERMUX_VERSION}"]; then
+    return false
+  else
+    return true
 }
 
 export gitpush 

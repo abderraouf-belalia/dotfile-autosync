@@ -13,4 +13,4 @@
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
-trap 'autosyncdotfiles' EXIT
+trap 'autosyncdotfiles &>/dev/null' EXIT

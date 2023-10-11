@@ -19,7 +19,8 @@ function gitfetch {
 
 # CONFIG FUNCTIONS
 function autosyncdotfiles {
-  if [[ IS_TERMUX ] ]]] then return;
+  if [ -z "${TERMUX_VERSION}"]; then
+    return false
   declare -g AUTOSYNC_DOTFILES_PATH=~/dotfile-autosync
   [ -d $AUTOSYNC_DOTFILES_PATH ] \
     && cd $AUTOSYNC_DOTFILES_PATH \
@@ -38,12 +39,7 @@ function clipsecret {
 }
 
 # CHECKERS
-function IS_TERMUX {
-  if [ -z "${TERMUX_VERSION}"]; then
-    return false
-  else
-    return true
-}
+
 
 export gitpush 
 export gitpull 

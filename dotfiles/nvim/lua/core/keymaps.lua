@@ -1,11 +1,20 @@
--- Navigate vim panes better
+-- Windows
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.keymap.set('n', '<leader>s', ':split<CR>')
+vim.keymap.set('n', '<leader>vs', ':vsplit<CR>')
 
+-- Commands
 vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
+
+-- AI
 vim.api.nvim_set_keymap('n', '<leader>ai', '<cmd>ChatGPT<CR>', {noremap = true})
+
+-- Files
 vim.api.nvim_set_keymap('n', '<leader>o', '<cmd>Oil<CR>', {noremap = true})
+
+-- Cheatsheet
+vim.api.nvim_set_keymap('n', '<leader>cs', '<cmd>Cheatsheet<CR>', {noremap = true})

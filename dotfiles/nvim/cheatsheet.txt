@@ -4,18 +4,15 @@
 # You can group cheats using,
 #  ## section-name @tag1 @tag2
 
-## AI Tools @ai
+## AI-Tools @ai
 <Leader>ai | Opens the ChatGPT dialog.
 
-## File Exploration @file @explorer
+## File-Exploration @file @explorer
 <Ctrl>f | Open file tree where the current file is.
 <Ctrl>t | Toggle the tree on and off.
 <Leader>o | Open current working directory as a buffer.
 
-## File Fetching @file @find
+## File-Fetching @file @find
 <Leader><Leader> | Find old file.
 <Leader>fg | File grep.
 <Leader>ff | Find file.
-
-## Code Navigation @code @Navigation
-

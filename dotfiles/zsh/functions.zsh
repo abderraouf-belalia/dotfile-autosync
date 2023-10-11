@@ -28,8 +28,8 @@ function autosyncdotfiles {
 
 # MISC FUNCTIONS
 function clipsecret {
-  if [-z ${TERMUX_VERSION+x}]; 
-  then; 
+  if [ -z ${TERMUX_VERSION+x} ]; 
+  then 
     exit
   fi
   declare -g SECRETS_PATH=~/.secrets

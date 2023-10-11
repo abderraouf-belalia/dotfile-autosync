@@ -28,3 +28,9 @@ alias nvimplugconfig="nvim $PLUGIN_CONFIG/init.lua"
 alias push=gitpush
 alias pull=gitpull
 alias fetch=gitfetch
+
+# MOVEMENT
+alias home="cd ~"
+alias back="cd -"
+alias work="cd ~/work"
+alias notes="cd ~/notes"

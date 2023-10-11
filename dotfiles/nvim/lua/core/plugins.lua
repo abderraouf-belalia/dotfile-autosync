@@ -17,6 +17,12 @@ return require('packer').startup(function(use)
 
 
   -- system
+  use {
+    'VonHeikemen/fine-cmdline.nvim',
+    requires = {
+      {'MunifTanjim/nui.nvim'}
+    }
+  }
   use 'ellisonleao/gruvbox.nvim'
   use 'nvim-tree/nvim-tree.lua'
   use {
@@ -94,27 +100,16 @@ return require('packer').startup(function(use)
           }
         }
     -- ai
-    use ({
-        "Bryley/neoai.nvim",
-        require = { "MunifTanjim/nui.nvim" },
-        cmd = {
-            "NeoAI",
-            "NeoAIOpen",
-            "NeoAIClose",
-            "NeoAIToggle",
-            "NeoAIContext",
-            "NeoAIContextOpen",
-            "NeoAIContextClose",
-            "NeoAIInject",
-            "NeoAIInjectCode",
-            "NeoAIInjectContext",
-            "NeoAIInjectContextCode",
-        },
+    use({
+      "jackMort/ChatGPT.nvim",
         config = function()
-            require("neoai").setup({
-                -- Options go here
-            })
+          require("chatgpt").setup()
         end,
+        requires = {
+          "MunifTanjim/nui.nvim",
+          "nvim-lua/plenary.nvim",
+          "nvim-telescope/telescope.nvim"
+        }
     })
     -- API Client
     use {

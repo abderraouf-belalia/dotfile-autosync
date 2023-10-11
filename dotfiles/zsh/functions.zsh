@@ -19,11 +19,6 @@ function gitfetch {
 
 # CONFIG FUNCTIONS
 function autosyncdotfiles {
-  if [ -z "${TERMUX_VERSION}"]; 
-  then; 
-   
-    return false;
-  fi
   declare -g AUTOSYNC_DOTFILES_PATH=~/dotfile-autosync
   [ -d $AUTOSYNC_DOTFILES_PATH ] \
     && cd $AUTOSYNC_DOTFILES_PATH \
@@ -33,6 +28,10 @@ function autosyncdotfiles {
 
 # MISC FUNCTIONS
 function clipsecret {
+  if [ -z "${TERMUX_VERSION}"]; 
+  then; 
+    return false;
+  fi
   declare -g SECRETS_PATH=~/.secrets
 
   # Checks if xclip is installed.

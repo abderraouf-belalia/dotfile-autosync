@@ -59,3 +59,5 @@ export gitfetch
 export autosyncdotfiles
 
 export clipsecret
+
+export updatenvim

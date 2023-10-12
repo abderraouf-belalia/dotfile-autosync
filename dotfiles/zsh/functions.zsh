@@ -42,12 +42,13 @@ function clipsecret {
 
 # NVIM FUNCTIONS
 function updatenvim {
-    home
-    wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
-    chmod +x nvim.appimage
+  home
+  wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+  chmod +x nvim.appimage
   ./nvim.appimage --appimage-extract
-    mv squa
+  mv squashfs-root .squashfs-root
   rm nvim.appimage
+  back
 }
 
 

@@ -43,5 +43,5 @@ alias cheatsheet="nvim $CHEATSHEET"
 alias qr="qrencode -t ansiutf8"
 
 # NOTES
-thoughtfolio="cd ~/notes/Thoughtfolio"
-codefolio="cd ~/notes/Codefolio"
+alias thoughtfolio="cd ~/notes/Thoughtfolio"
+alias codefolio="cd ~/notes/Codefolio"

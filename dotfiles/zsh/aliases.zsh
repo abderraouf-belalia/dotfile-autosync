@@ -37,3 +37,7 @@ alias back="cd -"
 alias work="cd ~/work"
 alias notes="cd ~/notes"
 alias cheatsheet="nvim $CHEATSHEET"
+
+
+# UTILITIES
+alias qr="qrencode -t ansiutf8"

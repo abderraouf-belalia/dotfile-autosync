@@ -40,7 +40,15 @@ function clipsecret {
   cat $SECRETS_PATH | grep "$1" | awk 'BEGIN{FS=":"}{print $2}' | xclip -selection clipboard
 }
 
-# CHECKERS
+# NVIM FUNCTIONS
+function updatenvim {
+    home
+    wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+    chmod +x nvim.appimage
+  ./nvim.appimage --appimage-extract
+    mv squa
+  rm nvim.appimage
+}
 
 
 export gitpush 

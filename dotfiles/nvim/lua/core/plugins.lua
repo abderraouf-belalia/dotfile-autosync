@@ -46,12 +46,7 @@ return require('packer').startup(function(use)
   -- editor
   use({
         "kylechui/nvim-surround",
-        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
-        config = function()
-            require("nvim-surround").setup({
-                -- Configuration here, or leave empty to use defaults
-            })
-        end
+        tag = "*"
     })
   use 'nvim-treesitter/nvim-treesitter'
 
@@ -71,6 +66,7 @@ return require('packer').startup(function(use)
                           workspaces = {
                               notes = "~/notes",
                           },
+                          default_workspace = "notes",
                       },
                   },
               },

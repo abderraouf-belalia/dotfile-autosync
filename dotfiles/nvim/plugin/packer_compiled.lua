@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/data/data/com.termux/files/home/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/data/data/com.termux/files/home/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/data/data/com.termux/files/home/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/data/data/com.termux/files/home/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/data/data/com.termux/files/home/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/abderraouf-belalia/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?.lua;/home/abderraouf-belalia/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?/init.lua;/home/abderraouf-belalia/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?.lua;/home/abderraouf-belalia/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/abderraouf-belalia/.cache/nvim/packer_hererocks/2.1.1692716794/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -77,156 +77,156 @@ _G.packer_plugins = {
   ["ChatGPT.nvim"] = {
     config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fchatgpt\frequire\0" },
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/ChatGPT.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/ChatGPT.nvim",
     url = "https://github.com/jackMort/ChatGPT.nvim"
   },
   NeoSolarized = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/NeoSolarized",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/NeoSolarized",
     url = "https://github.com/overcache/NeoSolarized"
   },
   ["cheatsheet.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim",
     url = "https://github.com/sudormrfbin/cheatsheet.nvim"
   },
   ["coc.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
   ["fine-cmdline.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/fine-cmdline.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/fine-cmdline.nvim",
     url = "https://github.com/VonHeikemen/fine-cmdline.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["gruvbox.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   neorg = {
-    config = { "\27LJ\2\nƒ\1\0\0\a\0\14\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\3\0004\4\0\0=\4\4\0034\4\0\0=\4\5\0035\4\t\0005\5\a\0005\6\6\0=\6\b\5=\5\n\4=\4\v\3=\3\r\2B\0\2\1K\0\1\0\tload\1\0\0\16core.dirman\vconfig\1\0\0\15workspaces\1\0\0\1\0\1\nnotes\f~/notes\19core.concealer\18core.defaults\1\0\0\nsetup\nneorg\frequire\0" },
+    config = { "\27LJ\2\n‹\1\0\0\a\0\14\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\3\0004\4\0\0=\4\4\0034\4\0\0=\4\5\0035\4\t\0005\5\a\0005\6\6\0=\6\b\5=\5\n\4=\4\v\3=\3\r\2B\0\2\1K\0\1\0\tload\1\0\0\16core.dirman\vconfig\1\0\0\15workspaces\1\0\1\22default_workspace\nnotes\1\0\1\nnotes\f~/notes\19core.concealer\18core.defaults\1\0\0\nsetup\nneorg\frequire\0" },
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/neorg",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/neorg",
     url = "https://github.com/nvim-neorg/neorg"
   },
   ["nui.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-surround"] = {
     config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/nvim-surround",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/nvim-surround",
     url = "https://github.com/kylechui/nvim-surround"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["oil.nvim"] = {
     config = { "\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0" },
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/oil.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/oil.nvim",
     url = "https://github.com/stevearc/oil.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["prettier.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
   },
   ["rest.nvim"] = {
-    config = { "\27LJ\2\n>\0\1\5\0\4\0\0066\1\0\0009\1\1\0019\1\2\0015\3\3\0\18\4\0\0D\1\3\0\1\5\0\0\ttidy\a-i\a-q\6-\vsystem\afn\bvimÅ\3\1\0\6\0\r\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0005\4\a\0003\5\b\0=\5\t\4=\4\n\3=\3\v\0024\3\0\0=\3\f\2B\0\2\1K\0\1\0\29custom_dynamic_variables\vresult\15formatters\thtml\0\1\0\1\tjson\ajq\1\0\4\19show_http_info\2\22show_curl_command\1\rshow_url\2\17show_headers\2\14highlight\1\0\2\fenabled\2\ftimeout\3ñ\1\1\0\a\28result_split_horizontal\1\20jump_to_request\1\renv_file\t.env\17yank_dry_run\2\15encode_url\2\26skip_ssl_verification\1\26result_split_in_place\1\nsetup\14rest-nvim\frequire\0" },
+    config = { "\27LJ\2\n>\0\1\5\0\4\0\0066\1\0\0009\1\1\0019\1\2\0015\3\3\0\18\4\0\0D\1\3\0\1\5\0\0\ttidy\a-i\a-q\6-\vsystem\afn\bvimÅ\3\1\0\6\0\r\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0005\4\a\0003\5\b\0=\5\t\4=\4\n\3=\3\v\0024\3\0\0=\3\f\2B\0\2\1K\0\1\0\29custom_dynamic_variables\vresult\15formatters\thtml\0\1\0\1\tjson\ajq\1\0\4\19show_http_info\2\22show_curl_command\1\rshow_url\2\17show_headers\2\14highlight\1\0\2\fenabled\2\ftimeout\3ñ\1\1\0\a\15encode_url\2\26skip_ssl_verification\1\26result_split_in_place\1\28result_split_horizontal\1\17yank_dry_run\2\renv_file\t.env\20jump_to_request\1\nsetup\14rest-nvim\frequire\0" },
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/rest.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/rest.nvim",
     url = "https://github.com/rest-nvim/rest.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
     config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
     loaded = true,
-    path = "/data/data/com.termux/files/home/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    path = "/home/abderraouf-belalia/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: oil.nvim
-time([[Config for oil.nvim]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
-time([[Config for oil.nvim]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
 time([[Config for toggleterm.nvim]], false)
--- Config for: ChatGPT.nvim
-time([[Config for ChatGPT.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fchatgpt\frequire\0", "config", "ChatGPT.nvim")
-time([[Config for ChatGPT.nvim]], false)
 -- Config for: rest.nvim
 time([[Config for rest.nvim]], true)
-try_loadstring("\27LJ\2\n>\0\1\5\0\4\0\0066\1\0\0009\1\1\0019\1\2\0015\3\3\0\18\4\0\0D\1\3\0\1\5\0\0\ttidy\a-i\a-q\6-\vsystem\afn\bvimÅ\3\1\0\6\0\r\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0005\4\a\0003\5\b\0=\5\t\4=\4\n\3=\3\v\0024\3\0\0=\3\f\2B\0\2\1K\0\1\0\29custom_dynamic_variables\vresult\15formatters\thtml\0\1\0\1\tjson\ajq\1\0\4\19show_http_info\2\22show_curl_command\1\rshow_url\2\17show_headers\2\14highlight\1\0\2\fenabled\2\ftimeout\3ñ\1\1\0\a\28result_split_horizontal\1\20jump_to_request\1\renv_file\t.env\17yank_dry_run\2\15encode_url\2\26skip_ssl_verification\1\26result_split_in_place\1\nsetup\14rest-nvim\frequire\0", "config", "rest.nvim")
+try_loadstring("\27LJ\2\n>\0\1\5\0\4\0\0066\1\0\0009\1\1\0019\1\2\0015\3\3\0\18\4\0\0D\1\3\0\1\5\0\0\ttidy\a-i\a-q\6-\vsystem\afn\bvimÅ\3\1\0\6\0\r\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0005\4\a\0003\5\b\0=\5\t\4=\4\n\3=\3\v\0024\3\0\0=\3\f\2B\0\2\1K\0\1\0\29custom_dynamic_variables\vresult\15formatters\thtml\0\1\0\1\tjson\ajq\1\0\4\19show_http_info\2\22show_curl_command\1\rshow_url\2\17show_headers\2\14highlight\1\0\2\fenabled\2\ftimeout\3ñ\1\1\0\a\15encode_url\2\26skip_ssl_verification\1\26result_split_in_place\1\28result_split_horizontal\1\17yank_dry_run\2\renv_file\t.env\20jump_to_request\1\nsetup\14rest-nvim\frequire\0", "config", "rest.nvim")
 time([[Config for rest.nvim]], false)
 -- Config for: neorg
 time([[Config for neorg]], true)
-try_loadstring("\27LJ\2\nƒ\1\0\0\a\0\14\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\3\0004\4\0\0=\4\4\0034\4\0\0=\4\5\0035\4\t\0005\5\a\0005\6\6\0=\6\b\5=\5\n\4=\4\v\3=\3\r\2B\0\2\1K\0\1\0\tload\1\0\0\16core.dirman\vconfig\1\0\0\15workspaces\1\0\0\1\0\1\nnotes\f~/notes\19core.concealer\18core.defaults\1\0\0\nsetup\nneorg\frequire\0", "config", "neorg")
+try_loadstring("\27LJ\2\n‹\1\0\0\a\0\14\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\3\0004\4\0\0=\4\4\0034\4\0\0=\4\5\0035\4\t\0005\5\a\0005\6\6\0=\6\b\5=\5\n\4=\4\v\3=\3\r\2B\0\2\1K\0\1\0\tload\1\0\0\16core.dirman\vconfig\1\0\0\15workspaces\1\0\1\22default_workspace\nnotes\1\0\1\nnotes\f~/notes\19core.concealer\18core.defaults\1\0\0\nsetup\nneorg\frequire\0", "config", "neorg")
 time([[Config for neorg]], false)
+-- Config for: oil.nvim
+time([[Config for oil.nvim]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\boil\frequire\0", "config", "oil.nvim")
+time([[Config for oil.nvim]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
+-- Config for: ChatGPT.nvim
+time([[Config for ChatGPT.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fchatgpt\frequire\0", "config", "ChatGPT.nvim")
+time([[Config for ChatGPT.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

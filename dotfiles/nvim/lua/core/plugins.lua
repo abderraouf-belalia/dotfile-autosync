@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
     -- search
     use({
   	  'nvim-telescope/telescope.nvim',
-  	  tag = '0.1.0',
+  	  branch = '0.1.x',
   	  requires = { {'nvim-lua/plenary.nvim'} }
     })
     -- shell
@@ -44,12 +44,15 @@ return require('packer').startup(function(use)
     end}
 
   -- editor
-  use({
+  use {
         "kylechui/nvim-surround",
-        tag = "*"
-    })
+        tag = "*",
+        config = function ()
+          require("autoclose").setup()
+        end,
+    }
   use 'nvim-treesitter/nvim-treesitter'
-
+  use 'm4xshen/autoclose.nvim'
   use('neovim/nvim-lspconfig')
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
@@ -75,6 +78,7 @@ return require('packer').startup(function(use)
                   },
               },
           }
+      vim.opt.conceallevel = 2 
       end,
       run = ":Neorg sync-parsers",
       requires = "nvim-lua/plenary.nvim",

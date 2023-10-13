@@ -79,18 +79,10 @@ return require('packer').startup(function(use)
       requires = "nvim-lua/plenary.nvim",
   }
     -- appearance
-    use 'overcache/NeoSolarized'
     use 'nvim-lualine/lualine.nvim'
     use 'lewis6991/gitsigns.nvim'
     use 'godlygeek/tabular'
-    use 'nvim-lua/popup.nvim'
-    use 'folke/twilight.nvim'
-    use {
-      "folke/tokyonight.nvim",
-      lazy = false,
-      priority = 1000,
-      opts = {},
-    }
+    use 'shaunsingh/solarized.nvim'
 
     -- intellisense
     use 'neoclide/coc.nvim' 

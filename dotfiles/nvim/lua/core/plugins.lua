@@ -63,11 +63,6 @@ return require('packer').startup(function(use)
           require('neorg').setup {
               load = {
                   ["core.defaults"] = {}, -- Loads default behaviour
-                  ["core.concealer"] = {
-                    config = {
-                      icon_preset = "diamond",
-                    },
-                  }, -- Adds pretty icons to your documents
                   ["core.dirman"] = { -- Manages Neorg workspaces
                       config = {
                           workspaces = {
@@ -87,7 +82,8 @@ return require('packer').startup(function(use)
     use 'overcache/NeoSolarized'
     use 'nvim-lualine/lualine.nvim'
     use 'lewis6991/gitsigns.nvim'
-    -- use { "catppuccin/nvim", as = "catppuccin" }
+    use 'godlygeek/tabular'
+    use 'nvim-lua/popup.nvim'
 
     -- intellisense
     use 'neoclide/coc.nvim' 

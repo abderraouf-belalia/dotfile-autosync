@@ -84,6 +84,13 @@ return require('packer').startup(function(use)
     use 'lewis6991/gitsigns.nvim'
     use 'godlygeek/tabular'
     use 'nvim-lua/popup.nvim'
+    use 'folke/twilight.nvim'
+    use {
+      "folke/tokyonight.nvim",
+      lazy = false,
+      priority = 1000,
+      opts = {},
+    }
 
     -- intellisense
     use 'neoclide/coc.nvim' 

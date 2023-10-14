@@ -86,6 +86,10 @@ return require('packer').startup(function(use)
     use "Pocco81/auto-save.nvim"
   
   -- productivity
+    -- zen mode
+    use "Pocco81/true-zen.nvim"
+    use "folke/twilight.nvim"
+
     -- cheatsheets
     use {
           'sudormrfbin/cheatsheet.nvim',

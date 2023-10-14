@@ -21,6 +21,8 @@ require("core.plugin_config.neorg")
 
 -- PRODUCTIVITY
 require("core.plugin_config.cheat")
+require("core.plugin_config.truezen")
+require("core.plugin_config.twilight")
 
 -- SEARCH
 require("core.plugin_config.telescope")
@@ -39,3 +41,4 @@ require("core.plugin_config.gitsigns")
 -- THEMES
 -- require("core.plugin_config.tokyonight")
 require("core.plugin_config.solarized")
+

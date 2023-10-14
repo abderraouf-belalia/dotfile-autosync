@@ -59,40 +59,36 @@ return require('packer').startup(function(use)
   -- note-taking
   use {
       "nvim-neorg/neorg",
-      config = function()
-          require('neorg').setup {
-              load = {
-                  ["core.defaults"] = {}, -- Loads default behaviour
-                  ["core.concealer"] = {}, -- Loads default behaviour
-                  ["core.dirman"] = { -- Manages Neorg workspaces
-                      config = {
-                          workspaces = {
-                              notes = "~/notes",
-                          },
-                          default_workspace = "notes",
-                      },
-                  },
-              },
-          }
-      vim.opt.conceallevel = 2 
-      end,
       run = ":Neorg sync-parsers",
       requires = "nvim-lua/plenary.nvim",
   }
     -- appearance
     use 'nvim-lualine/lualine.nvim'
     use 'lewis6991/gitsigns.nvim'
-    use 'godlygeek/tabular'
-    use 'shaunsingh/solarized.nvim'
+    use 'maxmx03/solarized.nvim'
 
     -- intellisense
     use 'neoclide/coc.nvim' 
+
+    -- versioning
+    use {
+      "NeogitOrg/neogit",
+      dependencies = {
+        "nvim-lua/plenary.nvim",         -- required
+        "nvim-telescope/telescope.nvim", -- optional
+        "sindrets/diffview.nvim",        -- optional
+        "ibhagwan/fzf-lua",              -- optional
+      },
+      config = true
+    }
+    
+    -- auto-save
+    use "Pocco81/auto-save.nvim"
   
   -- productivity
     -- cheatsheets
     use {
           'sudormrfbin/cheatsheet.nvim',
-        
           requires = {
             {'nvim-telescope/telescope.nvim'},
             {'nvim-lua/popup.nvim'},
@@ -114,46 +110,7 @@ return require('packer').startup(function(use)
     -- API Client
     use {
       "rest-nvim/rest.nvim",
-      requires = { "nvim-lua/plenary.nvim" },
-      config = function()
-        require("rest-nvim").setup({
-          -- Open request results in a horizontal split
-          result_split_horizontal = false,
-          -- Keep the http file buffer above|left when split horizontal|vertical
-          result_split_in_place = false,
-          -- Skip SSL verification, useful for unknown certificates
-          skip_ssl_verification = false,
-          -- Encode URL before making request
-          encode_url = true,
-          -- Highlight request on run
-          highlight = {
-            enabled = true,
-            timeout = 150,
-          },
-          result = {
-            -- toggle showing URL, HTTP info, headers at top the of result window
-            show_url = true,
-            -- show the generated curl command in case you want to launch
-            -- the same request via the terminal (can be verbose)
-            show_curl_command = false,
-            show_http_info = true,
-            show_headers = true,
-            -- executables or functions for formatting response body [optional]
-            -- set them to false if you want to disable them
-            formatters = {
-              json = "jq",
-              html = function(body)
-                return vim.fn.system({"tidy", "-i", "-q", "-"}, body)
-              end
-            },
-          },
-          -- Jump to request line on run
-          jump_to_request = false,
-          env_file = '.env',
-          custom_dynamic_variables = {},
-          yank_dry_run = true,
-        })
-      end
+      requires = { "nvim-lua/plenary.nvim" }
     }
 
 --

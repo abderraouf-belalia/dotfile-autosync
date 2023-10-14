@@ -1,9 +1,19 @@
-vim.g.solarized_italic_comments = true
-vim.g.solarized_italic_keywords = true
-vim.g.solarized_italic_functions = true
-vim.g.solarized_italic_variables = false
-vim.g.solarized_contrast = true
-vim.g.solarized_borders = true
-vim.g.solarized_disable_background = true
+vim.o.background = 'dark'
 
-require('solarized').set()
+-- default config
+require('solarized').setup({
+    transparent = false, -- enable transparent background
+    styles = {
+      comments = { italic = true },
+      functions = { bold = true },
+      variables = { italic = true },
+      numbers = {},
+      constants = {},
+      parameters = {},
+      keywords = { bold = true },
+      types = { italic = true },
+    }
+})
+
+
+vim.cmd.colorscheme = 'solarized'

@@ -1,13 +1,41 @@
-require("core.plugin_config.treesitter")
+-- FILE TREE
 require("core.plugin_config.nvim-tree")
 require("core.plugin_config.nvim-tree-devicons")
-require("core.plugin_config.telescope")
-require("core.plugin_config.gitsigns")
-require("core.plugin_config.coc")
-require("core.plugin_config.cheat")
-require("core.plugin_config.prettier")
+
+-- ALL IS A BUFFER
 require("core.plugin_config.oil")
-require("core.plugin_config.finecmdline")
+
+-- LINTING
+
+-- HIGHLIGHT
+require("core.plugin_config.treesitter")
+
+-- FORMATTING
+require("core.plugin_config.prettier")
+
+-- COMPLETION
+require("core.plugin_config.coc")
+
+-- NOTE-TAKING
+require("core.plugin_config.neorg")
+
+-- PRODUCTIVITY
+require("core.plugin_config.cheat")
+
+-- SEARCH
+require("core.plugin_config.telescope")
+
+-- EDITING
 require("core.plugin_config.surround")
--- require("core.plugin_config.solarized")
--- require("core.plugin_config.lualine")
+
+-- MISC.
+require("core.plugin_config.rest")
+
+-- APPEARANCE
+require("core.plugin_config.lualine")
+require("core.plugin_config.finecmdline")
+require("core.plugin_config.gitsigns")
+
+-- THEMES
+-- require("core.plugin_config.tokyonight")
+require("core.plugin_config.solarized")

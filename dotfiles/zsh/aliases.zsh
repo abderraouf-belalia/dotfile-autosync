@@ -12,6 +12,8 @@ alias alsconfig="nvim $ZSH_CONFIG/aliases.zsh"
 alias funcconfig="nvim $ZSH_CONFIG/functions.zsh"
 alias aprcconfig="nvim $ZSH_CONFIG/appearance.zsh"
 alias optconfig="nvim $ZSH_CONFIG/options.zsh"
+alias varconfig="nvim $ZSH_CONFIG/variables.zsh"
+
 
 
 # NVIM ALIASES

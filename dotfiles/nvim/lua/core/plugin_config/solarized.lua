@@ -12,7 +12,12 @@ require('solarized').setup({
       parameters = {},
       keywords = {},
       types = {},
-    }
+    },
+    enables = {
+      cmp = false,
+      treesitter = false
+    },
+    theme = 'neo'
 })
 
 

@@ -13,8 +13,8 @@ require("core.plugin_config.treesitter")
 -- FORMATTING
 require("core.plugin_config.prettier")
 
--- COMPLETION
-require("core.plugin_config.coc")
+-- COMPLETION & INTELLISENSE
+require("core.plugin_config.cmp")
 
 -- NOTE-TAKING
 require("core.plugin_config.neorg")
@@ -39,6 +39,5 @@ require("core.plugin_config.finecmdline")
 require("core.plugin_config.gitsigns")
 
 -- THEMES
--- require("core.plugin_config.tokyonight")
 require("core.plugin_config.solarized")
 

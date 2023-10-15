@@ -25,6 +25,8 @@ alias nvimconfig="nvim $NVIM_CONFIG/init.lua"
 alias nvimkeyconfig="nvim $CORE_CONFIG/keymaps.lua"
 alias nvimplugconfig="nvim $PLUGIN_CONFIG/init.lua"
 
+# BUN ALIASES
+alias bun="grun $HOME/.bun/bin/bun"
 
 # GIT ALIASES
 alias push=gitpush

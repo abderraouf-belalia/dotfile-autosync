@@ -12,8 +12,6 @@ require('solarized').setup({
       parameters = {},
       keywords = {},
       types = {},
-      text = {}
-    }
 })
 
 

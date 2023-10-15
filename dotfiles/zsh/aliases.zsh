@@ -41,8 +41,9 @@ alias notes="cd ~/notes"
 alias cheatsheet="nvim $CHEATSHEET"
 
 
-# UTILITIES
+# ACTIONS & UTILITIES
 alias qr="qrencode -t ansiutf8"
+alias open="nvim ."
 
 # NOTES
 alias thoughtfolio="cd ~/notes/Thoughtfolio"

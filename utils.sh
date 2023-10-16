@@ -27,6 +27,6 @@ function bisync {
 	grep "$PROGRAM" $REPO_PATH"/dotfile.paths" | awk 'BEGIN{FS=":"}{print $2}' | while read -r path; 
 	do 
 		rsync -avu $BACKUP_PATH $path
-		rsync -avu $path $BACKUP_PATH 
+		rsync -avu --delete $path $BACKUP_PATH 
 	done
 }

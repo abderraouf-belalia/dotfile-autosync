@@ -16,3 +16,17 @@
 <Leader><Leader> | Find old file.
 <Leader>fg | File grep.
 <Leader>ff | Find file.
+
+## LSP @language @server @completion
+<Leader>m | Open Mason manager.
+
+## Plugin-Manager @plugin 
+<Leader>ps | Launches Packer Sync.
+
+## Oil-Protocol @file @system
+g. | Toggle hidden files
+- | Go to parent directory.
+
+## Code-Navigation @code @navigation 
+gd | Go to defintion.
+gl | List references.

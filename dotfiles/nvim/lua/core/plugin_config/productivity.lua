@@ -1,5 +1,5 @@
 -- AUTOSAVE
-require("auto-save").setup({})
+-- require("auto-save").setup({})
 
 -- CHEATSHEET
 require("cheatsheet").setup({

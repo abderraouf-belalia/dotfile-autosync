@@ -2,12 +2,13 @@ require("lspsaga").setup({
 	debug = false,
 	use_saga_diagnostic_sign = true,
 	-- diagnostic sign
-	error_sign = "✘",
-	warn_sign = "",
-	hint_sign = "*",
-	infor_sign = "",
+	error_sign = "E",
+	warn_sign = "W",
+	hint_sign = "H",
+	infor_sign = "I",
 	diagnostic_header_icon = "   ",
 	-- code action title icon
+	code_action_icon = "A ",
 	code_action_prompt = {
 		enable = true,
 		sign = true,
@@ -33,7 +34,7 @@ require("lspsaga").setup({
 		quit = "<C-c>",
 		exec = "<CR>",
 	},
-	definition_preview_icon = "⌗  ",
+	definition_preview_icon = "D  ",
 	border_style = "single",
 	rename_prompt_prefix = "➤",
 	server_filetype_map = {},

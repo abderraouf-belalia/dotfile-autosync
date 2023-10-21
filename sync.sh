@@ -2,7 +2,7 @@
 
 . utils.sh
 
-BACKUP_LOCATION=$(pwd)
+ROOT_LOCATION=$(pwd)
 
 # Check for important commands
 echo "[*] Checking for command availability ..."
@@ -23,11 +23,14 @@ git pull
 cd ~
 # Syncing dotfiles
 ## NVIM
-bisync "nvim" "/dotfiles/nvim/" $BACKUP_LOCATION
+bisync "nvim" "/dotfiles/nvim/" $ROOT_LOCATION
 
 ## ZSH
-bisync "zsh" "/dotfiles/zsh/" $BACKUP_LOCATION
+bisync "zsh" "/dotfiles/zsh/" $ROOT_LOCATION
+
+# TMUX
+bisync "tmux" "/dotfiles/tmux/" $ROOT_LOCATION
 
 # Backup local changes
-cd $BACKUP_LOCATION
+cd $ROOT_LOCATION/dotfiles
 gitlocalcheck
